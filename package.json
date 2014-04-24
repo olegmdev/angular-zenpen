@@ -10,8 +10,7 @@
     "type": "git",
     "url": "git://github.com/qu1ze/angular-zenpen.git"
   },
-  "keywords": [
-    "angular",
+  "keywords": [    
     "zenpen",
     "angular-zenpen"    
   ],

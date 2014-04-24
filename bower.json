@@ -6,17 +6,14 @@
     "Oleg <qu1ze34@gmail.com>"
   ],
   "description": "Zenpen angular module",
-  "main": "angular-zenpen.js",
-  "moduleType": [
-    "globals"
-  ],
-  "keywords": [
-    "angular",   
+  "main": "angular-zenpen.js",  
+  "keywords": [     
     "zenpen",    
     "angular-zenpen"
   ],
   "license": "MIT",
   "dependencies" : {},
+  "devDependencies" : {},
   "ignore": [
     "**/.*",
     "node_modules",
