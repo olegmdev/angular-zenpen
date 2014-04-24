@@ -1,18 +1,20 @@
 {
-  "name": "angular-zenpen",
+  "name": "ng-zenpen",
   "version": "0.1.0",
   "homepage": "https://github.com/qu1ze/angular-zenpen",
   "authors": [
     "Oleg <qu1ze34@gmail.com>"
   ],
   "description": "Zenpen angular module",
-  "main": "angular-zenpen.js",  
+  "main": "ng-zenpen.js",  
   "keywords": [     
     "zenpen",    
-    "angular-zenpen"
+    "ng-zenpen"
   ],
   "license": "MIT",
-  "dependencies" : {},
+  "dependencies" : {
+    "zenpen" : "*"
+  },
   "devDependencies" : {},
   "ignore": [
     "**/.*",
