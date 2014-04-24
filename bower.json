@@ -16,6 +16,7 @@
     "angular-zenpen"
   ],
   "license": "MIT",
+  "dependencies" : {},
   "ignore": [
     "**/.*",
     "node_modules",
