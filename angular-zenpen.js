@@ -3,8 +3,8 @@
 (function () {
 	'use strict';
 
-	angular.module('angularZenpen', [])
-		.directive('zEditor', ['$timeout', '$window', function ($timeout, $window) {
+	angular.module('angularZenpen', ['angular.css.injector'])
+		.directive('zEditor', ['$timeout', '$window', 'cssInjector', function ($timeout, $window, cssInjector) {
       
       var template = '<div class="section yin">' + 
                         '<div class="ui">' +
@@ -37,7 +37,10 @@
         restrict : 'ACE',
         replace : true,
         template : template,
-        link : function(scope, element, attrs) {                   
+        link : function(scope, element, attrs) {
+          cssInjector.add("http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic");
+          cssInjector.add("/bower_components/zenpen/css/style.css");
+          cssInjector.add("/bower_components/zenpen/css/fonts.css");
           $timeout(function() {            
             if ($window.zeditor) {
               $window.zeditor();              
