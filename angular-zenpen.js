@@ -36,7 +36,7 @@
       return {
         restrict : 'ACE',
         replace : true,
-        template : template
+        template : template,
         link : function(scope, element, attrs) {                   
           $timeout(function() {            
             if ($window.zeditor) {
