@@ -3,10 +3,7 @@
 (function () {
 	'use strict';
 
-	angular.module('angularZenpen', ['angular.css.injector'])
-    .config(function(cssInjectorProvider){
-        cssInjectorProvider.setSinglePageMode(true);
-    })
+	angular.module('angularZenpen', ['angular.css.injector'])   
 		.directive('zEditor', ['$rootScope', '$timeout', '$window', 'cssInjector', function ($rootScope, $timeout, $window, cssInjector) {
       
       var baseUrl = '/bower_components/'
