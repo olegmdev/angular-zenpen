@@ -35,8 +35,7 @@
                     '</div>';
       
       return {
-        restrict : 'ACE',
-        replace : true,
+        restrict : 'ACE',        
         template : template,
         scope : {
           ngModel : '=',
