@@ -1,0 +1,29 @@
+{
+  "name": "angular-zenpen",
+  "version": "0.3.8",
+  "description": "Angular zenpen module",
+  "main": "angular-zenpen.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/qu1ze/angular-zenpen.git"
+  },
+  "keywords": [
+    "angular",
+    "zenpen",
+    "angular-zenpen",
+    "ng-zenpen"
+  ],
+  "dependencies" : {
+    "zenpen" : "git@github.com:qu1ze/zenpen.git",
+    "angular-css-injector" : "https://github.com/Yappli/angular-css-injector.git"
+  },
+  "author": "Oleg Meleshko <qu1ze34@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qu1ze/angular-zenpen/issues"
+  },
+  "homepage": "https://github.com/qu1ze/angular-zenpen"
+}
