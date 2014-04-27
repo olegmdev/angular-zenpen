@@ -3,8 +3,8 @@
 (function () {
 	'use strict';
 
-	angular.module('angularZenpen', ['angular.css.injector'])   
-		.directive('zEditor', ['$rootScope', '$timeout', '$window', 'cssInjector', function ($rootScope, $timeout, $window, cssInjector) {
+	angular.module('angularZenpen', [])   
+		.directive('zEditor', ['$rootScope', '$timeout', '$window', function ($rootScope, $timeout, $window) {
       
       var baseUrl = '/bower_components/'
         , template = '<div class="section yin">' + 
@@ -42,11 +42,7 @@
           baseUrl : '@'
         },
         link : function(scope, element, attrs) {
-          scope.baseUrl = scope.baseUrl || baseUrl;
-          
-          cssInjector.add('http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic');
-          cssInjector.add(scope.baseUrl + 'zenpen/css/style.css');
-          cssInjector.add(scope.baseUrl + 'zenpen/css/fonts.css');
+          scope.baseUrl = scope.baseUrl || baseUrl;          
       
           if ($window.zeditor) {
             $window.zeditor({
@@ -56,10 +52,7 @@
               }
             });              
           }
-          
-          scope.$on('$destroy', function(){
-            cssInjector.removeAll();
-          });
+                   
         }
       };
 		}]);

@@ -1,6 +1,6 @@
 {
   "name": "ng-zenpen",
-  "version": "0.3.95",
+  "version": "0.3.96",
   "homepage": "https://github.com/qu1ze/angular-zenpen",
   "authors": [
     "Oleg <qu1ze34@gmail.com>"
@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies" : {
     "zenpen" : "git@github.com:qu1ze/zenpen.git",
-    "angular-css-injector": "~1.0.2"
+    "angular-css-injector": "*"
   },
   "devDependencies" : {},
   "ignore": [
