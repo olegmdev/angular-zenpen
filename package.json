@@ -1,6 +1,6 @@
 {
   "name": "angular-zenpen",
-  "version": "0.3.9",
+  "version": "0.3.9.1",
   "description": "Angular zenpen module",
   "main": "angular-zenpen.js",
   "scripts": {
@@ -18,7 +18,7 @@
   ],
   "dependencies" : {
     "zenpen" : "git@github.com:qu1ze/zenpen.git",
-    "angular-css-injector" : "https://github.com/Yappli/angular-css-injector.git"
+    "angular-css-injector" : "git@github.com:Yappli/angular-css-injector.git"
   },
   "author": "Oleg Meleshko <qu1ze34@gmail.com>",
   "license": "MIT",
