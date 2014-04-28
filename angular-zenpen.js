@@ -28,7 +28,7 @@
                           '</span>' +
                         '</div>' +
                       '</div>' +
-                      '<article contenteditable="true" placeholder="{{ph}}" class="content"></article>' +
+                      '<article contenteditable="true" placeholder="{{ph}}" class="content">{{currentContent}}</article>' +
                       '<div class="word-counter">' +
                         '<span class="progress complete"></span>' +
                       '</div>' +
@@ -45,7 +45,7 @@
         },
         link : function(scope, element, attrs) {
           scope.baseUrl = scope.baseUrl || baseUrl;          
-          
+          scope.currentContent = scope.ngModel;
           if ($window.zeditor) {
             $timeout(function() {
               new $window.zeditor({
