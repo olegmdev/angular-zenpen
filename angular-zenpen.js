@@ -28,7 +28,7 @@
                           '</span>' +
                         '</div>' +
                       '</div>' +
-                      '<article contenteditable="true" class="content"></article>' +
+                      '<article contenteditable="true" placeholder="{{ph}}" class="content"></article>' +
                       '<div class="word-counter">' +
                         '<span class="progress complete"></span>' +
                       '</div>' +
@@ -40,7 +40,8 @@
         scope : {
           ngModel : '=',
           baseUrl : '@',
-          zId : '@'
+          zId : '@',
+          ph : '@'
         },
         link : function(scope, element, attrs) {
           scope.baseUrl = scope.baseUrl || baseUrl;          
