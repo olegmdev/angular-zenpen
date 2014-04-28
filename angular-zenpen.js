@@ -7,7 +7,7 @@
 		.directive('zEditor', ['$rootScope', '$timeout', '$window', function ($rootScope, $timeout, $window) {
       
       var baseUrl = '/bower_components/'
-        , template = '<div class="section yin">' + 
+        , template = '<div class="{{zId}} section yin">' + 
                       '<div class="ui">' +
                         '<div class="wrapper">' +
                           '<div class="top editing">' + 
@@ -39,18 +39,22 @@
         template : template,
         scope : {
           ngModel : '=',
-          baseUrl : '@'
+          baseUrl : '@',
+          zId : '@'
         },
         link : function(scope, element, attrs) {
           scope.baseUrl = scope.baseUrl || baseUrl;          
-      
+          
           if ($window.zeditor) {
-            $window.zeditor({
-              onKeyUp : function(html) {                
-                scope.ngModel = html;
-                $rootScope.safeApply();                
-              }
-            });              
+            $timeout(function() {
+              new $window.zeditor({
+                wrapperField : document.querySelector('.' + scope.zId),
+                onKeyUp : function(html) {                
+                  scope.ngModel = html;
+                  $rootScope.safeApply();                
+                }
+              });  
+            }, 0);
           }
                    
         }
