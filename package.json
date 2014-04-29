@@ -1,6 +1,6 @@
 {
   "name": "angular-zenpen",
-  "version": "0.3.99",
+  "version": "0.4.0",
   "description": "Angular zenpen module",
   "main": "angular-zenpen.js",
   "scripts": {
